@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>WireFrame 2.3</title>
+  <link rel="stylesheet">
+</head>
+
+<body>
+  <!--Scripts para el Wireframe 2.3-->
+  <script type="text/javascript">
+    
+    // Funcion que comprueba que los datos introducidos son correctos. Si es verdad, abrimos el home
+    function recuperoContr()
+    {
+      let quest = document.getElementById('preguntas').value;
+      let ans = document.getElementById('res').value;
+      let user = document.getElementById('buscaUser').value;
+
+      // Ahora mismo no comprueba con ninguna base de datos, por lo que abrimos nuestro home
+      if (quest == "" || ans == "" || user == "")
+      {
+        return false;
+      }
+      else
+      {
+        //this.window.opener.location.reload();
+        window.opener.location.href='wf1.html';
+        self.close();
+        return true;
+      }
+    }
+
+  </script>
+
+  <h2>Se ha olvidado de su contraseña</h2>
+  <div>
+     <form method="post">
+        <strong>Pregunta de seguridad</strong><br><br>
+        <select name="preguntas" id="preguntas">
+          <option value="q1" required>Esta es la pregunta 1</option>
+          <option value="q2" required>Esta es la pregunta 2</option>
+          <option value="q3" required>Esta es la pregunta 3</option>
+          <option value="q4" required>Esta es la pregunta 4</option>
+        </select>
+        <br>
+        <input type="text" name="res" id="res" required>
+
+        <br><br><br><strong>Respuesta</strong><br>
+        <input type="email" class="buscador" id="buscaUser" required><br><br><br>
+        <input type="submit" value="Enviar" onclick="recuperoContr()">
+     </form>
+  </div>
+
+</body>
+</html>

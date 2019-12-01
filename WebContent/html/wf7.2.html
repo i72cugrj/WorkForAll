@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>WireFrame 7.2</title>
+  <link rel="stylesheet" href="wf7.2.css">
+</head>
+
+<body>
+  <!--Scripts para el Wireframe 7.2-->
+  <script type="text/javascript">
+    
+    // Funcion que comprueba que los datos introducidos son correctos. Si es verdad, abrimos el home
+    function enviarDatosPersonales()
+    {
+      let nombre = document.getElementById('nombre').value;
+      let apellidos = document.getElementById('apellidos').value;
+      let dia = document.getElementById('dia').value;
+      let mes = document.getElementById('mes').value;
+      let ano = document.getElementById('ano').value;
+      let pais = document.getElementById('pais').value;
+      let localidad = document.getElementById('localidad').value;
+      let movil = document.getElementById('movil').value;
+      let email = document.getElementById('email').value;
+
+      // Ahora mismo no comprueba con ninguna base de datos, por lo que abrimos nuestro home
+      if (nombre == "" || apellidos == "" || dia == "" || mes == "" || ano == "" || pais == "" || localidad == "" || movil == "" || email == "")
+      {
+        return false;
+      }
+      else
+      {
+        //this.window.opener.location.reload();
+        self.close();
+        return true;
+      }
+    }
+
+  </script>
+
+  <h2><strong>Informaci&oacute;n Personal</strong></h2>
+  <div>
+     <table class="table_curr">
+         <tr>
+             <td>
+                 <table>
+                     <tr>
+                         <td>Nombre</td>
+                     </tr>
+                     <tr>
+                         <td>Apellidos</td>
+                     </tr>
+                     <tr>
+                         <td>Fecha de Nacimiento</td>
+                     </tr>
+                     <tr>
+                         <td>Pais</td>
+                     </tr>
+                     <tr>
+                         <td>Localidad</td>
+                     </tr>
+                     <tr>
+                         <td>Movil</td>
+                     </tr>
+                     <tr>
+                         <td>Email</td>
+                     </tr>
+                 </table>
+             </td>
+             <td>
+                 <form action="wf2.2.html" method="post">
+                    <input type="text" name="Nombre" id="nombre" placeholder="Nombre" required><br>
+                    <input type="text" name="Apellidos" id="apellidos" placeholder="Apellidos" required><br>
+                    <select name="dia" id="dia" class = "dia">
+                        <option value="q1" required>1</option>
+                        <option value="q2" required>2</option>
+                        <option value="q3" required>3</option>
+                        <option value="q4" required>4</option>
+                        <option value="q5" required>5</option>
+                        <option value="q6" required>6</option>
+                        <option value="q7" required>7</option>
+                        <option value="q8" required>8</option>
+                        <option value="q9" required>9</option>
+                        <option value="q10" required>10</option>
+                        <option value="q11" required>11</option>
+                        <option value="q12" required>12</option>
+                        <option value="q13" required>13</option>
+                        <option value="q14" required>14</option>
+                        <option value="q15" required>15</option>
+                        <option value="q16" required>16</option>
+                        <option value="q17" required>17</option>
+                        <option value="q18" required>18</option>
+                        <option value="q19" required>19</option>
+                        <option value="q20" required>20</option>
+                        <option value="q21" required>21</option>
+                        <option value="q22" required>22</option>
+                        <option value="q23" required>23</option>
+                        <option value="q24" required>24</option>
+                        <option value="q25" required>25</option>
+                        <option value="q26" required>26</option>
+                        <option value="q27" required>27</option>
+                        <option value="q28" required>28</option>
+                        <option value="q29" required>29</option>
+                        <option value="q30" required>30</option>
+                        <option value="q31" required>31</option>
+                    </select>
+                    <select name="mes" id="mes" class = "dia">
+                        <option value="q1" required>Enero</option>
+                        <option value="q2" required>Febrero</option>
+                        <option value="q3" required>Marzo</option>
+                        <option value="q4" required>Abril</option>
+                        <option value="q5" required>Mayo</option>
+                        <option value="q6" required>Junio</option>
+                        <option value="q7" required>Julio</option>
+                        <option value="q8" required>Agosto</option>
+                        <option value="q9" required>Septiembre</option>
+                        <option value="q10" required>Octubre</option>
+                        <option value="q12" required>Noviembre</option>
+                        <option value="q12" required>Dicicembre</option>
+                    </select>
+                    <input type="text" name="Ano" id="ano" placeholder="A&ntilde;o" required><br>
+                    <input type="text" name="Pais" id="pais" placeholder="Pias" required><br>
+                    <input type="text" name="Localidad" id="localidad" placeholder="Localidad" required><br>
+                    <input type="text" name="Movil" id="movil" placeholder="Movil" required><br>
+                    <input type="text" name="email" id="email" placeholder="email" required><br>
+
+                    <input type="submit" onclick="enviarDatosPersonales()" value="Enviar"> <input type="button" value="Cancelar" onclick="self.close();">
+                 </form>
+             </td>
+         </tr>
+     </table>
+  </div>
+</body>
+</html>

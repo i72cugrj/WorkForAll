@@ -1,0 +1,11 @@
+.dia
+{
+    overflow: scroll;
+}
+
+.table_curr
+{
+    border: 3px solid black;
+    border-spacing: 10px;
+    margin: 10px;
+}
