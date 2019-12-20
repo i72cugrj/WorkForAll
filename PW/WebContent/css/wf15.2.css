@@ -1,0 +1,224 @@
+body
+{
+	background-color: rgb(0,210,255);
+	overflow: scroll;
+}
+
+/*153x100 pixeles*/
+.logo_home
+{
+	position: absolute;
+	left: 5%;
+	top: 8%;
+	width: 12%;
+	height: 15%;
+}
+
+.img_user_2
+{
+	top: 5px;
+	left: 5px;
+	height: 50px;
+	width: 50px;
+}
+
+/*117x65 pixeles*/
+.img_user
+{
+	position: absolute;
+	left: 85%;
+	top: 5%;
+	width: 8%;
+	height: 10%;
+}
+
+a.nombre
+{
+	position: absolute;
+	left: 85%;
+	top: 20%;
+}
+
+a.mensaje
+{
+	position: absolute;
+	left: 85%;
+	top: 23%;
+}
+
+a.sobre
+{
+	position: absolute;
+	left: 35%;
+	top: 97%;
+}
+
+a.tecnico
+{
+	position: absolute;
+	left: 50%;
+	top: 97%;
+}
+
+a.cerrar
+{
+	position: absolute;
+	left: 85%;
+	top: 26%;
+}
+
+.link_home
+{
+	background-color: white;
+	border: 3px solid black;
+	position: absolute;
+	left: 20%;
+	top: 8%;
+	width: 6%;
+	padding: 30px 50px;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+}
+
+.div_home
+{
+	background-color: white;
+	border: 3px solid black;
+	position: absolute;
+	left: 20%;
+	top: 20%;
+	width: 51%;
+	height: 68%;
+	padding: 30px 50px;
+	color: black;
+	overflow:scroll;
+}
+
+div.div_lista_amigos
+{
+	background-color: white;
+	border: 3px solid black;
+	position: absolute;
+	left: 50px;
+	top: 250px;
+	width: 200px;
+	height: 300px;
+	overflow:scroll;
+}
+
+.area_text
+{
+    width: 700px;
+}
+
+.boton{
+    position: absolute;
+    left: 700px
+}
+
+.link_amigos
+{
+	background-color: white;
+	border: 3px solid black;
+	position: absolute;
+	left: 35%;
+	top: 8%;
+	width: 6%;
+	padding: 30px 50px;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+}
+
+.link_buscador
+{
+	background-color: white;
+	border: 3px solid black;
+	position: absolute;
+	left: 50%;
+	top: 8%;
+	width: 6%;
+	padding: 30px 50px;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+}
+
+.link_foro
+{
+	background-color: white;
+	border: 3px solid black;
+	position: absolute;
+	left: 65%;
+	top: 8%;
+	width: 6%;
+	padding: 30px 50px;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+}
+
+.li_home{
+	list-style-type: none;
+}
+
+lu.lu_home{
+	position: absolute;
+	left: 10px;
+	top: 10px
+}
+
+table.uno{
+    border-spacing: 10px 1px;
+}
+
+td.uno{
+    border: 3px solid black;
+    background-color: white;
+}
+
+td.dos{
+    border: 3px solid black;
+    background-color: white;
+}
+
+td.tres{
+    border: 3px solid black;
+    background-color: rgb(170, 167, 167);
+}
+
+h3.lista_amigos{
+	position: absolute;
+	left: 50px;
+	top: 200px;
+}
+
+.boton_cir{
+	width:50px;
+	height: 50px;
+	background-color: white;
+	margin: 5px;
+	padding:10px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	font-size:11px;
+	line-height:32px;
+	text-transform: uppercase;
+	float:left;
+	left: 85%;
+	top: 80%;
+	position: absolute;
+  }
+  
+  .boton:hover{
+	opacity: 0.50;
+	-moz-opacity: .50;
+	filter:alpha (opacity=50);
+  }
+  .boton a{
+	color:#fff;
+	text-decoration:none;
+	padding:5px 5px 5px 0;
+  }

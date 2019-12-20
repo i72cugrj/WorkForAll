@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>WireFrame 7.6</title>
+  <link rel="stylesheet" href="wf7.2.css">
+</head>
+
+<body>
+  <!--Scripts para el Wireframe 7.6-->
+  <script type="text/javascript">
+    
+    // Funcion que comprueba que los datos introducidos son correctos. Si es verdad, abrimos el home
+    function enviarIdiomas()
+    {
+      let idioma = document.getElementById('idioma').value;
+      let lectura = document.getElementById('lectura').value;
+      let conversacion = document.getElementById('conversacion').value;
+      let escritura = document.getElementById('escritura').value;
+      let nivel_eu = document.getElementById('nivel_eu').value;
+
+      // Ahora mismo no comprueba con ninguna base de datos, por lo que abrimos nuestro home
+      if (idioma == "" || lectura == "" || conversacion == "" || escritura == "" || nivel_eu == "")
+      {
+        return false;
+      }
+      else
+      {
+        //this.window.opener.location.reload();
+        self.close();
+        return true;
+      }
+    }
+
+  </script>
+  <h2><strong>Información Personal</strong></h2>
+  <div>
+     <table class="table_curr">
+         <tr>
+             <td>
+                 <table>
+                     <tr>
+                         <td>Idioma</td>
+                     </tr>
+                     <tr>
+                         <td>Lectura</td>
+                     </tr>
+                     <tr>
+                         <td>Conversacion</td>
+                     </tr>
+                     <tr>
+                         <td>Escritura</td>
+                     </tr>
+                     <tr>
+                        <td>Nivel Europeo</td>
+                    </tr>
+                    <tr>
+                        <td>Observaciones</td>
+                    </tr>                   
+                 </table>
+             </td>
+             <td>
+                 <form action="wf2.2.html" method="post">
+                    <input type="text" name="Idioma" id="idioma" placeholder="Idioma" required><br>
+                    <select name="Lectura" id="lectura" class = "Lectura">
+                            <option value="q1" required>NATIVO</option>
+                            <option value="q2" required>MUY ALTO</option>
+                            <option value="q3" required>ALTO</option>
+                            <option value="q4" required>MEDIO</option>
+                            <option value="q5" required>ACEPTABLE</option>
+                            <option value="q6" required>BAJO</option>
+                            <option value="q7" required>MUY BAJO</option>
+                    </select><br>
+                    <select name="Conversacion" id="conversacion" class = "Conversacion">
+                            <option value="q1" required>NATIVO</option>
+                            <option value="q2" required>MUY ALTO</option>
+                            <option value="q3" required>ALTO</option>
+                            <option value="q4" required>MEDIO</option>
+                            <option value="q5" required>ACEPTABLE</option>
+                            <option value="q6" required>BAJO</option>
+                            <option value="q7" required>MUY BAJO</option>
+                    </select><br>
+                    <select name="Escritura" id="escritura" class = "Escritura">
+                            <option value="q1" required>NATIVO</option>
+                            <option value="q2" required>MUY ALTO</option>
+                            <option value="q3" required>ALTO</option>
+                            <option value="q4" required>MEDIO</option>
+                            <option value="q5" required>ACEPTABLE</option>
+                            <option value="q6" required>BAJO</option>
+                            <option value="q7" required>MUY BAJO</option>
+                    </select><br>
+                    <select name="Nivel Europeo" id="nivel_eu" class = "Nivel Europeo">
+                            <option value="q1" required>C1</option>
+                            <option value="q2" required>C2</option>
+                            <option value="q3" required>B1</option>
+                            <option value="q4" required>B2</option>
+                            <option value="q5" required>A1</option>
+                            <option value="q6" required>A2</option>
+                    </select><br>
+                    <input type="text" name="Observaciones" placeholder="Observaciones"><br>
+                    <input type="submit" onclick="enviarIdiomas()" value="Enviar"> <input type="button" value="Cancelar" onclick="self.close();">
+                 </form>
+             </td>
+         </tr>
+     </table>
+  </div>
+</body>
+</html>

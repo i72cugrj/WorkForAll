@@ -1,0 +1,21 @@
+body
+{
+	background-color: rgb(0,210,255);
+}
+
+.title_wf2-1
+{
+	top: 3%;
+	text-align:center;
+}
+
+.registro
+{
+	background-color: lightGray;
+	border: 3px solid black;
+	margin-left: auto;
+	margin-right: auto;
+	width: 400px;
+	padding: 5%;
+}
+

@@ -1,0 +1,51 @@
+h3.curriculum
+{
+	position: fixed;
+	left: 81%;
+    top: 35%;
+}
+div.div_curriculum
+{
+    position: fixed;
+    left: 82%;
+    top: 45%;
+    height: 15%;
+    
+}
+
+table.table_curriculum
+{
+    
+    border: 3px solid black;
+    background-color: white;
+}
+
+td.td_curriculum
+{
+    border: 3px solid black;
+    background-color: white;
+}
+
+.h3_perfil
+{
+	position: relative;
+	left: 2%;
+}
+.boton_seguir
+{
+    position: relative;
+    top: 3px;
+    left: 30%;
+}
+.boton_mensaje
+{
+    position: relative;
+    top: 3px;
+    left: 45%;
+}
+.boton_opciones
+{
+    position: relative;
+    top: 3px;
+    left: 60%;
+}

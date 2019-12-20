@@ -1,0 +1,39 @@
+
+.img_event
+{
+	top: 5px;
+	left: 5px;
+	height: 90px;
+	width: 90px;
+}
+
+.td_event
+{
+	border: 3px solid black;
+	width: 2000px;
+	padding: 3%;
+}
+.td_user_img
+{
+	border: 3px solid black;
+}
+.td_dos_img
+{
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+	border-left: 3px solid black;
+	width: 50px;
+    height: 50px;
+}
+.td_dos_com
+{
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    width: 2000px;
+    
+    
+}
+table.t_comentarios{
+	border-collapse: collapse;
+}

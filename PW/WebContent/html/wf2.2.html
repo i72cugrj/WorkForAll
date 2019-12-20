@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>WireFrame 2.2</title>
+  <link rel="stylesheet" href="wf2.2.css">
+</head>
+
+<body>
+  <!--Mensaje de bienvenida-->
+  <h2 class="title_wf2-1"><strong>Comparte tu vida profesional</strong></h2>
+
+  <!--Cuadro para introducir username, password o si ha olvidado la contraseña-->
+  <div class="registro">
+    <form method="post">
+      <h3>Curriculum Vitae</h3>
+      <h4> Introducir curriculum desde el ordenador</h4>
+      <input type="file" value="archivo">
+      <br><br>
+      <h4> Introducir curriculum manualmente</h4>
+
+      <table class="table_curriculum">
+        <tr>
+          <td><a href="" onclick="window.open('wf7.1.html', 'WireFrame 7.1', 'top=300,left=700,width=600,height=400')">Foto</a></td>
+        </tr>
+        <tr>
+          <td><a href="" onclick="window.open('wf7.2.html', 'WireFrame 7.2', 'top=300,left=700,width=800,height=400')">Datos personales</a></td>
+        </tr>
+        <tr>
+          <td><a href="" onclick="window.open('wf7.4.html', 'WireFrame 7.4', 'top=300,left=700,width=800,height=400')">Datos acad&eacute;micos</a></td>
+        </tr>
+        <tr>
+          <td><a href="" onclick="window.open('wf7.6.html', 'WireFrame 7.6', 'top=300,left=700,width=800,height=400')">Idiomas</a></td>
+        </tr>
+        <tr>
+          <td><a href="" onclick="window.open('wf7.8.html', 'WireFrame 7.8', 'top=300,left=700,width=800,height=400')">Experiencia profesional</a></td>
+        </tr>
+      </table>
+      <br>
+      <br>
+      <input type="submit" value="Continuar" onclick="window.opener.location.href='wf1.html';self.close();"> <input type="button" value="Cancelar" onclick="window.opener.location.href='wf1.html';self.close();">
+    </form>
+  </div>
+
+</body>
+</html>
