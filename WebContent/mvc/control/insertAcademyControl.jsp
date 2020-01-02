@@ -20,7 +20,7 @@ if (customerBean.getuserID() == 0 ) {
 	
 	userid = customerBean.getuserID();
 	
-	if(bd.checkIDAcademy(userid) == false){
+	if(bd.checkIDAcademy(userid)){
 		bd.delete(userid);
 	}
 	

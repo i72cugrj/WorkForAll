@@ -73,7 +73,7 @@ public class IdiomDAO {
 		int status=0;
 		try{
 		Connection con=getConnection();
-		PreparedStatement ps=con.prepareStatement("delete * from `userIdioms` where userID = ?");
+		PreparedStatement ps=con.prepareStatement("delete from `userIdioms` where userID = ?");
 		ps.setInt(1,userid);
 		status=ps.executeUpdate(); 
 		}catch(Exception e){System.out.println(e);}

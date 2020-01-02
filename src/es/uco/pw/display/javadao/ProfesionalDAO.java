@@ -77,7 +77,7 @@ public class ProfesionalDAO {
 		int status=0;
 		try{
 		Connection con=getConnection();
-		String consulta = "DELETE FROM userPersonalInfo WHERE userID =?";
+		String consulta = "DELETE FROM `userLaboral` WHERE userID =?";
 		PreparedStatement ps=con.prepareStatement(consulta);
 		ps.setInt(1,userid);
 		status=ps.executeUpdate(); 

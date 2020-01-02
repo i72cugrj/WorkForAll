@@ -79,7 +79,7 @@ public int savePersona(int userID, String name,String surname, int day, int mont
 		int status=0;
 		try{
 		Connection con=getConnection();
-		PreparedStatement ps=con.prepareStatement("delete * from `userPersonalInfo` where userID = ?");
+		PreparedStatement ps=con.prepareStatement("delete from `userPersonalInfo` where userID = ?");
 		ps.setInt(1,userid);
 		status=ps.executeUpdate(); 
 		}catch(Exception e){System.out.println(e);}

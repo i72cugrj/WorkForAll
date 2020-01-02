@@ -92,7 +92,7 @@
                     </select>
                     <input type="text" name="year" id="year" placeholder="Año" required><br>
 
-                    <select name="dia" id="dia2" class = "dia">
+                    <select name="dia2" id="dia2" class = "dia">
                             <option value="q/" required>/</option>
                             <option value="q1" required>1</option>
                             <option value="q2" required>2</option>
@@ -126,7 +126,7 @@
                             <option value="q30" required>30</option>
                             <option value="q31" required>31</option>
                         </select>
-                        <select name="mes" id="mes2" class = "dia">
+                        <select name="mes2" id="mes2" class = "dia">
                             <option value="q/" required>/</option>
                             <option value="q1" required>Enero</option>
                             <option value="q2" required>Febrero</option>
